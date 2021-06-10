@@ -21,47 +21,50 @@ struct MainTabView: View {
         
         
         
-        GeometryReader { geometry in
-             VStack {
-                Spacer()
-                 switch viewRouter.currentPage {
-                 case .home:
-                    HomeView()
+        ZStack {
+            Color.Neumorphic.main
+            
+                 VStack {
+                    Spacer()
+                     switch viewRouter.currentPage {
+                     case .home:
+                        HomeView()
+                        
+                     case .add:
+                        Text("Add")
+                        
+                     case .records:
+                         Text("Records")
+                     }
+                     Spacer()
                     
-                 case .add:
-                    Text("Add")
+                    ZStack {
+                        
+                    HStack {
+                        TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "books.vertical.fill", tabName: "Home")
+                        
+                        TabBarIcon(viewRouter: viewRouter, assignedPage: .add, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "plus", tabName: "Liked")
+                        
+                        TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "waveform", tabName: "Liked")
+                         
+                        
+                     }
+                         .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight/8)
+                         .background(Color("TabBarBackground").shadow(radius: 2))
+                    .padding(.bottom,15)
+                 }.edgesIgnoringSafeArea(.bottom)
                     
-                 case .records:
-                     Text("Records")
+                    
                  }
-                 Spacer()
-                
-                ZStack {
-                    
-                HStack {
-                    TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName: "books.vertical.fill", tabName: "Home")
-                    
-                    TabBarIcon(viewRouter: viewRouter, assignedPage: .add, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName: "plus", tabName: "Liked")
-                    
-                    TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName: "waveform", tabName: "Liked")
-                     
-                    
-                 }
-                     .frame(width: geometry.size.width, height: geometry.size.height/8)
-                     .background(Color("TabBarBackground").shadow(radius: 2))
-                .padding(.bottom,15)
-             }.edgesIgnoringSafeArea(.bottom)
-                
-                
-             }
-         }
+            
+        }.edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView(viewRouter: ViewRouter())
-            //.preferredColorScheme(.dark)
+            .preferredColorScheme(.dark)
     }
 }
 
@@ -95,26 +98,14 @@ struct TabBarIcon: View {
     
      var body: some View {
         
-
-        
-
-        ZStack {
-            
-            
             Toggle(isOn: bindingToggle(), label: {
-                    if toggleIsOn {
-                            Image(systemName: systemIconName)
-                                .font(.title)
-                                
-                                
-                        }
-                        else{
-                            Image(systemName: systemIconName)
-                                
-                                .font(.title)
-                                
-                        }
-                })
+                    
+                        Image(systemName: systemIconName)
+                            .font(.title)
+                            .foregroundColor(viewRouter.currentPage != assignedPage ? .gray : .pink)
+                          
+                        })
+                
             
             .softToggleStyle(RoundedRectangle(cornerRadius: 8), pressedEffect: .hard)
             
@@ -122,20 +113,7 @@ struct TabBarIcon: View {
                 .padding()
                 .cornerRadius(8)
                 .frame(width: width, height: height, alignment: .center)
-                
-                
-            
-                 
-        }
-         
-//         .onAppear{
-//            if viewRouter.currentPage == assignedPage {
-//                toggleIsOn =  true
-//            }
-//            else {
-//                toggleIsOn = false
-//            }
-//         }
+
      }
  }
 

@@ -9,7 +9,14 @@ import SwiftUI
 
 struct SmallProgress: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ZStack {
+                Text("21%")
+            PercentageRing(
+                ringWidth: 10, percent: 44 ,
+                            backgroundColor: Color.green.opacity(0.2),
+                            foregroundColors: [.green, .blue]
+            ).frame(width: 59, height: 59, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        }
     }
 }
 

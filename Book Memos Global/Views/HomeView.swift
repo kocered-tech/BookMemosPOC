@@ -15,16 +15,24 @@ let secondaryColor = Color.Neumorphic.secondary
 struct HomeView: View {
     @State var searchText = ""
     var body: some View {
-        VStack {
+        
+        ScrollView {
+            
             
             HStack {
                 SearchBar(searchText:$searchText)
                 Image(systemName: "gearshape.fill").font(.title)
                     .softOuterShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 3, radius: 2)
             }.padding()
-            Spacer()
-        }
+            
+            
+            
+            BookScrollView()
+            //HomeNotesView()
+            
+        }.padding(.top)
     }
+    
 }
 struct SearchBar: View {
     @Binding var searchText: String

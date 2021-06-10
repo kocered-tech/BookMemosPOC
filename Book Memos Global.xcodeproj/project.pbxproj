@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D6B7F26725D2A00F8FA89 /* BookScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B7E26725D2A00F8FA89 /* BookScrollView.swift */; };
+		180D6B83267260CA00F8FA89 /* SmallProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B82267260CA00F8FA89 /* SmallProgress.swift */; };
+		180D6B862672612000F8FA89 /* PercentageRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B852672612000F8FA89 /* PercentageRing.swift */; };
+		180D6B892672619600F8FA89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B882672619600F8FA89 /* Extensions.swift */; };
+		180D6B8C26726AE800F8FA89 /* HomeNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B8B26726AE800F8FA89 /* HomeNotesView.swift */; };
+		180D6B8F26726B9500F8FA89 /* NoteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B8E26726B9500F8FA89 /* NoteCardView.swift */; };
+		180D6B9326729B4E00F8FA89 /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 180D6B9226729B4E00F8FA89 /* WaterfallGrid */; };
+		180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B952672A17A00F8FA89 /* KocerWaterfall.swift */; };
+		180D6B9A2672AB3300F8FA89 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B992672AB3300F8FA89 /* BookModel.swift */; };
+		180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */; };
 		1866FE2626722663007DC589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2526722663007DC589 /* AppDelegate.swift */; };
 		1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2726722663007DC589 /* SceneDelegate.swift */; };
 		1866FE2A26722663007DC589 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2926722663007DC589 /* MainTabView.swift */; };
@@ -19,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		180D6B7E26725D2A00F8FA89 /* BookScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScrollView.swift; sourceTree = "<group>"; };
+		180D6B82267260CA00F8FA89 /* SmallProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallProgress.swift; sourceTree = "<group>"; };
+		180D6B852672612000F8FA89 /* PercentageRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageRing.swift; sourceTree = "<group>"; };
+		180D6B882672619600F8FA89 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		180D6B8B26726AE800F8FA89 /* HomeNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNotesView.swift; sourceTree = "<group>"; };
+		180D6B8E26726B9500F8FA89 /* NoteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCardView.swift; sourceTree = "<group>"; };
+		180D6B952672A17A00F8FA89 /* KocerWaterfall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KocerWaterfall.swift; sourceTree = "<group>"; };
+		180D6B992672AB3300F8FA89 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		1866FE2226722663007DC589 /* Book Memos Global.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Memos Global.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866FE2526722663007DC589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1866FE2726722663007DC589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,12 +56,51 @@
 			buildActionMask = 2147483647;
 			files = (
 				1866FE3C26722A37007DC589 /* Neumorphic in Frameworks */,
+				180D6B9326729B4E00F8FA89 /* WaterfallGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180D6B7A26725C1D00F8FA89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				180D6B8B26726AE800F8FA89 /* HomeNotesView.swift */,
+				180D6B7E26725D2A00F8FA89 /* BookScrollView.swift */,
+				1866FE42267250F8007DC589 /* HomeView.swift */,
+				1866FE2926722663007DC589 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		180D6B7B26725C2E00F8FA89 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		180D6B7C26725C3700F8FA89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180D6B992672AB3300F8FA89 /* BookModel.swift */,
+				180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		180D6B7D26725C4700F8FA89 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				180D6B952672A17A00F8FA89 /* KocerWaterfall.swift */,
+				180D6B82267260CA00F8FA89 /* SmallProgress.swift */,
+				180D6B852672612000F8FA89 /* PercentageRing.swift */,
+				180D6B8E26726B9500F8FA89 /* NoteCardView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		1866FE1926722662007DC589 = {
 			isa = PBXGroup;
 			children = (
@@ -62,15 +120,18 @@
 		1866FE2426722663007DC589 /* Book Memos Global */ = {
 			isa = PBXGroup;
 			children = (
-				1866FE42267250F8007DC589 /* HomeView.swift */,
+				180D6B7D26725C4700F8FA89 /* SubViews */,
+				180D6B7C26725C3700F8FA89 /* Models */,
+				180D6B7B26725C2E00F8FA89 /* ViewModels */,
+				180D6B7A26725C1D00F8FA89 /* Views */,
 				1866FE2526722663007DC589 /* AppDelegate.swift */,
 				1866FE2726722663007DC589 /* SceneDelegate.swift */,
-				1866FE2926722663007DC589 /* MainTabView.swift */,
 				1866FE2B26722665007DC589 /* Assets.xcassets */,
 				1866FE3026722665007DC589 /* LaunchScreen.storyboard */,
 				1866FE3326722665007DC589 /* Info.plist */,
 				1866FE2D26722665007DC589 /* Preview Content */,
 				1866FE3E26723113007DC589 /* ViewRouter.swift */,
+				180D6B882672619600F8FA89 /* Extensions.swift */,
 			);
 			path = "Book Memos Global";
 			sourceTree = "<group>";
@@ -101,6 +162,7 @@
 			name = "Book Memos Global";
 			packageProductDependencies = (
 				1866FE3B26722A37007DC589 /* Neumorphic */,
+				180D6B9226729B4E00F8FA89 /* WaterfallGrid */,
 			);
 			productName = "Book Memos Global";
 			productReference = 1866FE2226722663007DC589 /* Book Memos Global.app */;
@@ -131,6 +193,7 @@
 			mainGroup = 1866FE1926722662007DC589;
 			packageReferences = (
 				1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */,
+				180D6B9126729B4E00F8FA89 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 			);
 			productRefGroup = 1866FE2326722663007DC589 /* Products */;
 			projectDirPath = "";
@@ -160,10 +223,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1866FE2626722663007DC589 /* AppDelegate.swift in Sources */,
+				180D6B892672619600F8FA89 /* Extensions.swift in Sources */,
+				180D6B83267260CA00F8FA89 /* SmallProgress.swift in Sources */,
+				180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */,
 				1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */,
+				180D6B7F26725D2A00F8FA89 /* BookScrollView.swift in Sources */,
+				180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */,
+				180D6B9A2672AB3300F8FA89 /* BookModel.swift in Sources */,
 				1866FE2A26722663007DC589 /* MainTabView.swift in Sources */,
+				180D6B862672612000F8FA89 /* PercentageRing.swift in Sources */,
 				1866FE43267250F8007DC589 /* HomeView.swift in Sources */,
+				180D6B8F26726B9500F8FA89 /* NoteCardView.swift in Sources */,
 				1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */,
+				180D6B8C26726AE800F8FA89 /* HomeNotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +435,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		180D6B9126729B4E00F8FA89 /* XCRemoteSwiftPackageReference "WaterfallGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/paololeonardi/WaterfallGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 		1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/costachung/neumorphic/";
@@ -374,6 +454,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		180D6B9226729B4E00F8FA89 /* WaterfallGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 180D6B9126729B4E00F8FA89 /* XCRemoteSwiftPackageReference "WaterfallGrid" */;
+			productName = WaterfallGrid;
+		};
 		1866FE3B26722A37007DC589 /* Neumorphic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */;

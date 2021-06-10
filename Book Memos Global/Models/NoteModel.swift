@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct NoteModel: Identifiable, Codable {
+    var id: Int
+    var title: String
+    var body: String
+    var image: Data
+    var parentBookId: Int
+    var savedDate: Date
+}
