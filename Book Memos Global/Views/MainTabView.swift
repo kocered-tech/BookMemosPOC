@@ -36,6 +36,8 @@ struct MainTabView: View {
                  }
                  Spacer()
                 
+                ZStack {
+                    
                 HStack {
                     TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: geometry.size.width/3, height: geometry.size.height/28, systemIconName: "books.vertical.fill", tabName: "Home")
                     
@@ -49,7 +51,9 @@ struct MainTabView: View {
                      .background(Color("TabBarBackground").shadow(radius: 2))
                 .padding(.bottom,15)
              }.edgesIgnoringSafeArea(.bottom)
-            
+                
+                
+             }
          }
     }
 }
