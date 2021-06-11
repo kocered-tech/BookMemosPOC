@@ -31,6 +31,7 @@ struct HomeView: View {
             //HomeNotesView()
             
         }.padding(.top)
+        
     }
     
 }

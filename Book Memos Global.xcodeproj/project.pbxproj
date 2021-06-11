@@ -17,6 +17,7 @@
 		180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B952672A17A00F8FA89 /* KocerWaterfall.swift */; };
 		180D6B9A2672AB3300F8FA89 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B992672AB3300F8FA89 /* BookModel.swift */; };
 		180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */; };
+		180D6BA12673EB8200F8FA89 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6BA02673EB8200F8FA89 /* BookDetailView.swift */; };
 		1866FE2626722663007DC589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2526722663007DC589 /* AppDelegate.swift */; };
 		1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2726722663007DC589 /* SceneDelegate.swift */; };
 		1866FE2A26722663007DC589 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2926722663007DC589 /* MainTabView.swift */; };
@@ -38,6 +39,7 @@
 		180D6B952672A17A00F8FA89 /* KocerWaterfall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KocerWaterfall.swift; sourceTree = "<group>"; };
 		180D6B992672AB3300F8FA89 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		180D6BA02673EB8200F8FA89 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		1866FE2226722663007DC589 /* Book Memos Global.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Memos Global.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866FE2526722663007DC589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1866FE2726722663007DC589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				180D6B7E26725D2A00F8FA89 /* BookScrollView.swift */,
 				1866FE42267250F8007DC589 /* HomeView.swift */,
 				1866FE2926722663007DC589 /* MainTabView.swift */,
+				180D6BA02673EB8200F8FA89 /* BookDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */,
 				180D6B7F26725D2A00F8FA89 /* BookScrollView.swift in Sources */,
 				180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */,
+				180D6BA12673EB8200F8FA89 /* BookDetailView.swift in Sources */,
 				180D6B9A2672AB3300F8FA89 /* BookModel.swift in Sources */,
 				1866FE2A26722663007DC589 /* MainTabView.swift in Sources */,
 				180D6B862672612000F8FA89 /* PercentageRing.swift in Sources */,

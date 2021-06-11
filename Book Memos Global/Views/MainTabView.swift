@@ -15,7 +15,7 @@ enum Page {
  }
 struct MainTabView: View {
     @StateObject var viewRouter: ViewRouter
-    
+    @State var offset = CGSize.zero
     
     var body: some View {
         
@@ -29,6 +29,7 @@ struct MainTabView: View {
                      switch viewRouter.currentPage {
                      case .home:
                         HomeView()
+                            
                         
                      case .add:
                         Text("Add")
@@ -39,7 +40,7 @@ struct MainTabView: View {
                      Spacer()
                     
                     ZStack {
-                        
+                    
                     HStack {
                         TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "books.vertical.fill", tabName: "Home")
                         
@@ -49,14 +50,30 @@ struct MainTabView: View {
                          
                         
                      }
-                         .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight/8)
-                         .background(Color("TabBarBackground").shadow(radius: 2))
-                    .padding(.bottom,15)
-                 }.edgesIgnoringSafeArea(.bottom)
+                    .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight/12)
+                    .padding(.bottom,18)
+                        
+                    }.opacity(2 - Double(abs(offset.height / 50)))
+                    .edgesIgnoringSafeArea(.bottom)
                     
                     
                  }
-            
+            Rectangle().foregroundColor(.clear)
+                .gesture(
+                    DragGesture()
+                        .onChanged { gesture in
+                            self.offset = gesture.translation
+                            print(self.offset)
+                        }
+
+                        .onEnded { _ in
+                            if abs(self.offset.width) > 100 {
+                                // remove the card
+                            } else {
+                                self.offset = .zero
+                            }
+                        }
+                )
         }.edgesIgnoringSafeArea(.all)
     }
 }
@@ -64,7 +81,7 @@ struct MainTabView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView(viewRouter: ViewRouter())
-            .preferredColorScheme(.dark)
+            //.preferredColorScheme(.dark)
     }
 }
 

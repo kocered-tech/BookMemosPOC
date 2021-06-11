@@ -9,11 +9,11 @@ import SwiftUI
 import Neumorphic
 
 struct BookScrollView: View {
+
+    
+    
     var body: some View {
         
-       
-        
-            
                     VStack {
                         HStack {
                             Text("Your Books")
@@ -60,6 +60,7 @@ struct BookScrollView: View {
                         KocerWaterfall()
                             
                     }.padding(.horizontal)
+                    
             
         
         
