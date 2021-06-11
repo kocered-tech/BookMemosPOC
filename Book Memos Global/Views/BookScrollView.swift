@@ -29,6 +29,7 @@ struct BookScrollView: View {
                         ScrollView(.horizontal) {
                             HStack{
                                 ForEach(1..<5){_ in
+                                    
                                     VStack {
                                     Image("download")
                                         .resizable()
