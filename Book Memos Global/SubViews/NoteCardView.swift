@@ -10,7 +10,10 @@ import Neumorphic
 
 struct NoteCardView: View {
     
+    @Namespace private var animation
+    
     public let text: String
+    
     var body: some View {
         
         ZStack{
@@ -37,6 +40,7 @@ struct NoteCardView: View {
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: false)
                     .padding(.horizontal)
+                    .matchedGeometryEffect(id: "Shape", in: animation)
                     Spacer()
             }
             

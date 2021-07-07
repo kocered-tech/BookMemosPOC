@@ -47,7 +47,7 @@ struct MainTabView: View {
                             
                             TabBarIcon(viewRouter: viewRouter, assignedPage: .add, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "plus", tabName: "Liked")
                             
-                            TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "waveform", tabName: "Liked")
+                            TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "chart.bar", tabName: "Liked")
                              
                             
                          }
