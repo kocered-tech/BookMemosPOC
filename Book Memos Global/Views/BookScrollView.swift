@@ -63,10 +63,7 @@ struct BookScrollView: View {
                                 
                             }
                         }
-                        HomeNotesView()
-                            .padding(.vertical)
                         
-                        KocerWaterfall()
                             
                     }.padding(.horizontal)
                     

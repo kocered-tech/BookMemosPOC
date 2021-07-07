@@ -16,21 +16,36 @@ struct HomeView: View {
     @State var searchText = ""
     var body: some View {
         
-        ScrollView {
-            
-            
-            HStack {
-                SearchBar(searchText:$searchText)
-                Image(systemName: "gearshape.fill").font(.title)
-                    .softOuterShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 3, radius: 2)
-            }.padding()
+        ZStack {
             
             
             
-            BookScrollView()
-            //HomeNotesView()
+            ScrollView {
+                
+                
+                HStack {
+                    SearchBar(searchText:$searchText)
+                    Image(systemName: "gearshape.fill").font(.title)
+                        .softOuterShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 3, radius: 2)
+                }.padding()
+                
+                
+                
+                BookScrollView()
+                //HomeNotesView()
+                
+                HomeNotesView()
+                        .padding()
+                
+                
+                
+                KocerWaterfall()
+                
+            }.padding(.top)
             
-        }.padding(.top)
+            NoteDetailView()
+                .hidden(false)
+        }
         
     }
     

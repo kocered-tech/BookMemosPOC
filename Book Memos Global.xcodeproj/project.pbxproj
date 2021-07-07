@@ -29,6 +29,7 @@
 		1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE3E26723113007DC589 /* ViewRouter.swift */; };
 		1866FE43267250F8007DC589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE42267250F8007DC589 /* HomeView.swift */; };
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
+		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		1866FE3E26723113007DC589 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		1866FE42267250F8007DC589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		186EDE022673FB42001A0184 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		18C910122696497200716146 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		1866FE2426722663007DC589 /* Book Memos Global */ = {
 			isa = PBXGroup;
 			children = (
+				18C910112696496300716146 /* Extensions */,
 				180D6B7D26725C4700F8FA89 /* SubViews */,
 				180D6B7C26725C3700F8FA89 /* Models */,
 				180D6B7B26725C2E00F8FA89 /* ViewModels */,
@@ -150,6 +153,14 @@
 				1866FE2E26722665007DC589 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18C910112696496300716146 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18C910122696497200716146 /* SwiftUIExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				1866FE43267250F8007DC589 /* HomeView.swift in Sources */,
 				180D6B8F26726B9500F8FA89 /* NoteCardView.swift in Sources */,
 				1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */,
+				18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */,
 				180D6B8C26726AE800F8FA89 /* HomeNotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

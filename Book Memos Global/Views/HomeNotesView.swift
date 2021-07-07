@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeNotesView: View {
     var body: some View {
         
-            VStack {
+            
                 
                 HStack {
                     Text("Your Notes")
@@ -22,9 +22,7 @@ struct HomeNotesView: View {
                         .foregroundColor(.secondary)
                         
                 }
-                
-                
-            }
+          
         
     }
 }
