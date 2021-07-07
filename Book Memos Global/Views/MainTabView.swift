@@ -21,60 +21,63 @@ struct MainTabView: View {
         
         
         
-        ZStack {
-            Color.Neumorphic.main
-            
-                 VStack {
-                    Spacer()
-                     switch viewRouter.currentPage {
-                     case .home:
-                        HomeView()
+        NavigationView {
+            ZStack {
+                Color.Neumorphic.main
+                
+                     VStack {
+                        Spacer()
+                         switch viewRouter.currentPage {
+                         case .home:
+                            HomeView()
+                                
                             
+                         case .add:
+                            Text("Add")
+                            
+                         case .records:
+                             Text("Records")
+                         }
+                         Spacer()
                         
-                     case .add:
-                        Text("Add")
+                        ZStack {
                         
-                     case .records:
-                         Text("Records")
+                        HStack {
+                            TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "books.vertical.fill", tabName: "Home")
+                            
+                            TabBarIcon(viewRouter: viewRouter, assignedPage: .add, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "plus", tabName: "Liked")
+                            
+                            TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "waveform", tabName: "Liked")
+                             
+                            
+                         }
+                        .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight/12)
+                        .padding(.bottom,18)
+                            
+                        }.opacity(2 - Double(abs(offset.height / 50)))
+                        .edgesIgnoringSafeArea(.bottom)
+                        
+                        
                      }
-                     Spacer()
-                    
-                    ZStack {
-                    
-                    HStack {
-                        TabBarIcon(viewRouter: viewRouter, assignedPage: .home, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "books.vertical.fill", tabName: "Home")
-                        
-                        TabBarIcon(viewRouter: viewRouter, assignedPage: .add, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "plus", tabName: "Liked")
-                        
-                        TabBarIcon(viewRouter: viewRouter, assignedPage: .records, width: UIScreen.screenWidth/3, height: UIScreen.screenHeight/28, systemIconName: "waveform", tabName: "Liked")
-                         
-                        
-                     }
-                    .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight/12)
-                    .padding(.bottom,18)
-                        
-                    }.opacity(2 - Double(abs(offset.height / 50)))
-                    .edgesIgnoringSafeArea(.bottom)
-                    
-                    
-                 }
-            Rectangle().foregroundColor(.clear)
-                .gesture(
-                    DragGesture()
-                        .onChanged { gesture in
-                            self.offset = gesture.translation
-                            print(self.offset)
-                        }
-
-                        .onEnded { _ in
-                            if abs(self.offset.width) > 100 {
-                                // remove the card
-                            } else {
-                                self.offset = .zero
+                Rectangle().foregroundColor(.clear)
+                    .gesture(
+                        DragGesture()
+                            .onChanged { gesture in
+                                self.offset = gesture.translation
+                                print(self.offset)
                             }
-                        }
-                )
-        }.edgesIgnoringSafeArea(.all)
+
+                            .onEnded { _ in
+                                if abs(self.offset.width) > 100 {
+                                    // remove the card
+                                } else {
+                                    self.offset = .zero
+                                }
+                            }
+                    )
+            }.edgesIgnoringSafeArea(.all)
+        }
+        
     }
 }
 

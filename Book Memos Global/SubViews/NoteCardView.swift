@@ -16,8 +16,8 @@ struct NoteCardView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(Color.Neumorphic.main)
-                .softInnerShadow(RoundedRectangle(cornerRadius: 20), darkShadow: darkShadowColor, lightShadow: lightShadowColor, spread: 0.05, radius: 1)
                 .softOuterShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 3, radius: 2)
+                
             
             VStack{
                 
