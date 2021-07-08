@@ -25,9 +25,10 @@ struct MainTabView: View {
         NavigationView {
             ZStack {
                 Color.Neumorphic.main
+                    .edgesIgnoringSafeArea(.all)
                 
                      VStack {
-                        Spacer()
+                        //Spacer()
                          switch viewRouter.currentPage {
                          case .home:
                             
@@ -70,24 +71,11 @@ struct MainTabView: View {
                         
                         
                      }
-                Rectangle().foregroundColor(.clear)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { gesture in
-                                self.offset = gesture.translation
-                                print(self.offset)
-                            }
-
-                            .onEnded { _ in
-                                if abs(self.offset.width) > 100 {
-                                    // remove the card
-                                } else {
-                                    self.offset = .zero
-                                }
-                            }
-                    )
-            }.edgesIgnoringSafeArea(.all)
+                
+            }
+            //.edgesIgnoringSafeArea(.all)
         }
+        .accentColor(Color.Neumorphic.darkShadow)
         
     }
 }

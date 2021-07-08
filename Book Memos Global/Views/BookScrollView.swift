@@ -29,14 +29,14 @@ struct BookScrollView: View {
                         }
                         
                         ScrollView(.horizontal) {
-                            LazyHStack{
-                                ForEach(1..<5){_ in
+                            LazyHStack(alignment:.top){
+                                ForEach(exampleBookData,id:\.self) { book in
                                     
                                     VStack {
                                     NavigationLink(
-                                        destination: BookDetailView(),
+                                        destination: BookDetailView(book:book),
                                         label: {
-                                            Image("download")
+                                            book.imageData.getImage()
                                                 .resizable()
                                                 .frame(width: UIScreen.screenWidth/3.2, height: UIScreen.screenWidth/3.2*1.45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                                 .cornerRadius(20)
@@ -48,14 +48,16 @@ struct BookScrollView: View {
                                         
                                         //SmallProgress()
                                         VStack(alignment:.leading){
-                                            Text("Dune")
+                                            Text(book.title)
                                                 .font(.title3)
                                                 .foregroundColor(.primary)
                                             
-                                            Text("Ernesto Schnack")
+                                            Text(book.author)
                                                 .font(.body)
                                                 .foregroundColor(.secondary)
-                                        }.padding(.horizontal,4)
+                                        }.frame(width: UIScreen.screenWidth/3.2)
+                                        .padding(.horizontal,4)
+                                        
                                         
                                     }
                                     

@@ -34,7 +34,11 @@ struct NoteDetailView: View {
                                     //.padding()
                                 Spacer()
                                 Button(action: {
-                                    isNoteDetailVisible.toggle()
+                                    
+                                    withAnimation {
+                                        isNoteDetailVisible.toggle()
+                                    }
+                                    
 //                                    hideKeyboard()
 //                                    print("TAPPED")
                                     
@@ -46,13 +50,11 @@ struct NoteDetailView: View {
                                 .buttonStyle(PlainButtonStyle())
                                 .frame(width: 40, height: 40, alignment: .center)
                                 .foregroundColor(Color.Neumorphic.secondary)
-                                .padding()
-                                
-                            
+
                             
                             
                     }
-                    .padding(.top,60)
+                    .padding(.top,75)
                 
                     
                     
@@ -64,12 +66,9 @@ struct NoteDetailView: View {
                         
 
                         
-                }.keyboardObserving()
-                .onAppear{
-                    UITextView.appearance().backgroundColor = .clear
-                    UITextView.appearance().textAlignment = NSTextAlignment.justified
-                
-                }.padding(.vertical)
+                }
+                .keyboardObserving()
+                .padding(.vertical)
                 .padding()
             
         }

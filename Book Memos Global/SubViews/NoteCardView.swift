@@ -11,6 +11,7 @@ import Neumorphic
 struct NoteCardView: View {
     
     @Namespace private var animation
+    public var note: NoteModel
     
     public let text: String
     
@@ -25,24 +26,28 @@ struct NoteCardView: View {
             VStack{
                 
                 HStack {
-                    Text("Dune")
+                    Text(note.title)
                         .font(.title3)
-                        .foregroundColor(.primary)
+                        .foregroundColor(.secondary)
                         .bold()
-                        .padding()
-                    Spacer()
                         
-                }
-                
-                Text(text)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .lineLimit(nil)
-                    .fixedSize(horizontal: false, vertical: false)
-                    .padding(.horizontal)
-                    .matchedGeometryEffect(id: "Shape", in: animation)
                     Spacer()
-            }
+                    Text("To Kill a Mocking Bird")
+                        .foregroundColor(.secondary)
+                        .font(.system(size: 16))
+                        .italic()
+                        
+                }.padding(.bottom)
+                
+                Text(note.body)
+                    .font(.body)
+                    //.font(Font.custom("Avenir", size: 16))
+                    .foregroundColor(.primary)
+                    .lineLimit(nil)
+                    //.fixedSize(horizontal: false, vertical: false)
+                    //.padding(.horizontal)
+                    //Spacer()
+            }.padding()
             
         }
     }
@@ -50,6 +55,6 @@ struct NoteCardView: View {
 
 struct NoteCardView_Previews: PreviewProvider {
     static var previews: some View {
-        NoteCardView(text: "You can create a grid that displays the elements of collection by passing your collection of data and a closure that provides a view for each element in the collection. The grid transforms each element in the collection into a child view by using the supplied closure.")
+        NoteCardView(note: exampleNote1, text: "You can create a grid that displays the elements of collection by passing your collection of data and a closure that provides a view for each element in the collection. The grid transforms each element in the collection into a child view by using the supplied closure.")
     }
 }

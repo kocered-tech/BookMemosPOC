@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         UITextView.appearance().backgroundColor = .clear
-        UITextView.appearance().textAlignment = NSTextAlignment.justified
+        
+//        UITextView.appearance().textAlignment = NSTextAlignment.justified
         // Create the SwiftUI view that provides the window contents.
         let contentView = MainTabView(viewRouter: self.viewRouter)
 

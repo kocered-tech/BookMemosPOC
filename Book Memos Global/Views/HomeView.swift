@@ -27,6 +27,9 @@ struct HomeView: View {
                     SearchBar(searchText:$searchText)
                     Image(systemName: "gearshape.fill").font(.title)
                         .softOuterShadow(darkShadow: darkShadowColor, lightShadow: lightShadowColor, offset: 3, radius: 2)
+                        .onTapGesture {
+                            print(5)
+                        }
                 }.padding()
                 
                 
@@ -40,6 +43,7 @@ struct HomeView: View {
                 
                 
                 KocerWaterfall(isNoteDetailVisible: $isNoteDetailVisible)
+                        .padding()
                 
             }.padding(.top)
             

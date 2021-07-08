@@ -8,13 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct BookModel: Identifiable, Codable {
-    var id: Int
+struct BookModel: Identifiable, Codable,Hashable {
+    var id = UUID().uuidString
     var title: String
     var author: String
-    var image: Data
+    var imageData: Data
     var readPages: Int
     var totalPages: Int
     var startDate: Date
+    
 }
 

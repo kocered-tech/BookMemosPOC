@@ -29,6 +29,7 @@
 		1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE3E26723113007DC589 /* ViewRouter.swift */; };
 		1866FE43267250F8007DC589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE42267250F8007DC589 /* HomeView.swift */; };
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
+		18B299482696EB37002557AE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B299472696EB37002557AE /* GlobalConstants.swift */; };
 		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
 		18C910172696694E00716146 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 18C910162696694E00716146 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		1866FE3E26723113007DC589 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		1866FE42267250F8007DC589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		186EDE022673FB42001A0184 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		18B299472696EB37002557AE /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		18C910122696497200716146 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		1866FE2426722663007DC589 /* Book Memos Global */ = {
 			isa = PBXGroup;
 			children = (
+				18B299462696EB2B002557AE /* Helpers */,
 				18C910112696496300716146 /* Extensions */,
 				180D6B7D26725C4700F8FA89 /* SubViews */,
 				180D6B7C26725C3700F8FA89 /* Models */,
@@ -155,6 +158,14 @@
 				1866FE2E26722665007DC589 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B299462696EB2B002557AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				18B299472696EB37002557AE /* GlobalConstants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		18C910112696496300716146 /* Extensions */ = {
@@ -257,6 +268,7 @@
 				180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */,
 				180D6BA12673EB8200F8FA89 /* BookDetailView.swift in Sources */,
 				180D6B9A2672AB3300F8FA89 /* BookModel.swift in Sources */,
+				18B299482696EB37002557AE /* GlobalConstants.swift in Sources */,
 				1866FE2A26722663007DC589 /* MainTabView.swift in Sources */,
 				180D6B862672612000F8FA89 /* PercentageRing.swift in Sources */,
 				1866FE43267250F8007DC589 /* HomeView.swift in Sources */,

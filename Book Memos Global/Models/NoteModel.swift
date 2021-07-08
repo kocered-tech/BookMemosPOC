@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct NoteModel: Identifiable, Codable {
-    var id: Int
+struct NoteModel: Identifiable, Codable, Hashable {
+    var id = UUID().uuidString
     var title: String
     var body: String
     var image: Data
-    var parentBookId: Int
+    var parentBookId: String
     var savedDate: Date
 }
