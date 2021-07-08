@@ -14,10 +14,12 @@ let secondaryColor = Color.Neumorphic.secondary
 
 struct HomeView: View {
     @State var searchText = ""
-    @State var isNoteDetailVisible = false
+    @Binding var isNoteDetailVisible: Bool
+    
     var body: some View {
         
         ZStack {
+            
 
             ScrollView {
  
@@ -41,38 +43,8 @@ struct HomeView: View {
                 
             }.padding(.top)
             
-            NoteDetailView()
             
-                .hidden(!isNoteDetailVisible)
-//            ZStack {
-//                Color.Neumorphic.main
-//                    //.edgesIgnoringSafeArea(.all)
-//                NoteDetailView()
-//
-//                VStack {
-//                    HStack {
-//                        Spacer()
-//
-//                        Image(systemName: "xmark.circle")
-//                                .resizable()
-//                        .frame(width: 50, height: 50, alignment: .center)
-//                        .padding()
-//
-//                    }
-//                    .onTapGesture {
-//                        withAnimation{
-//                        isNoteDetailVisible.toggle()
-//                        }
-//                    }
-//                    Spacer()
-//                }
-//                .hidden(!isNoteDetailVisible)
-//
-//            }
-//            .padding(.top)
-//            .padding(.top)
-//            .hidden(!isNoteDetailVisible)
-
+            
             
         }
         
@@ -106,7 +78,7 @@ struct SearchBar: View {
 }
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(isNoteDetailVisible: .constant(false))
             //.preferredColorScheme(.dark)
     }
 }

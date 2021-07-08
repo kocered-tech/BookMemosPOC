@@ -16,6 +16,7 @@ enum Page {
 struct MainTabView: View {
     @StateObject var viewRouter: ViewRouter
     @State var offset = CGSize.zero
+    @State var isNoteDetailVisible = false
     
     var body: some View {
         
@@ -29,7 +30,17 @@ struct MainTabView: View {
                         Spacer()
                          switch viewRouter.currentPage {
                          case .home:
-                            HomeView()
+                            
+                            
+                            if isNoteDetailVisible {
+                            
+                                NoteDetailView(isNoteDetailVisible: $isNoteDetailVisible)
+                                        .hidden(!isNoteDetailVisible)
+                                  
+                            } else {
+                                HomeView(isNoteDetailVisible: $isNoteDetailVisible)
+                            }
+                            
                                 
                             
                          case .add:

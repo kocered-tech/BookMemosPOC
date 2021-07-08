@@ -30,6 +30,7 @@
 		1866FE43267250F8007DC589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE42267250F8007DC589 /* HomeView.swift */; };
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
 		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
+		18C910172696694E00716146 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 18C910162696694E00716146 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180D6BA52673EE1100F8FA89 /* SwiftUIX in Frameworks */,
+				18C910172696694E00716146 /* KeyboardObserving in Frameworks */,
 				1866FE3C26722A37007DC589 /* Neumorphic in Frameworks */,
 				180D6B9326729B4E00F8FA89 /* WaterfallGrid in Frameworks */,
 			);
@@ -183,6 +185,7 @@
 				1866FE3B26722A37007DC589 /* Neumorphic */,
 				180D6B9226729B4E00F8FA89 /* WaterfallGrid */,
 				180D6BA42673EE1100F8FA89 /* SwiftUIX */,
+				18C910162696694E00716146 /* KeyboardObserving */,
 			);
 			productName = "Book Memos Global";
 			productReference = 1866FE2226722663007DC589 /* Book Memos Global.app */;
@@ -215,6 +218,7 @@
 				1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */,
 				180D6B9126729B4E00F8FA89 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 				180D6BA32673EE1100F8FA89 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
 			);
 			productRefGroup = 1866FE2326722663007DC589 /* Products */;
 			projectDirPath = "";
@@ -483,6 +487,14 @@
 				minimumVersion = 2.0.5;
 			};
 		};
+		18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nickffox/KeyboardObserving.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -500,6 +512,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */;
 			productName = Neumorphic;
+		};
+		18C910162696694E00716146 /* KeyboardObserving */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
+			productName = KeyboardObserving;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
