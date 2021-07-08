@@ -30,6 +30,7 @@
 		1866FE43267250F8007DC589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE42267250F8007DC589 /* HomeView.swift */; };
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
 		18B299482696EB37002557AE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B299472696EB37002557AE /* GlobalConstants.swift */; };
+		18B2994C26975C34002557AE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2994B26975C34002557AE /* AddBookView.swift */; };
 		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
 		18C910172696694E00716146 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 18C910162696694E00716146 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		1866FE42267250F8007DC589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		186EDE022673FB42001A0184 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		18B299472696EB37002557AE /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		18B2994B26975C34002557AE /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		18C910122696497200716146 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				1866FE2926722663007DC589 /* MainTabView.swift */,
 				180D6BA02673EB8200F8FA89 /* BookDetailView.swift */,
 				186EDE022673FB42001A0184 /* NoteDetailView.swift */,
+				18B2994B26975C34002557AE /* AddBookView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				1866FE2626722663007DC589 /* AppDelegate.swift in Sources */,
 				180D6B892672619600F8FA89 /* Extensions.swift in Sources */,
 				180D6B83267260CA00F8FA89 /* SmallProgress.swift in Sources */,
+				18B2994C26975C34002557AE /* AddBookView.swift in Sources */,
 				186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */,
 				180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */,
 				1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */,

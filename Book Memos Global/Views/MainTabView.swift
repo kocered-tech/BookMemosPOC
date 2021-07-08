@@ -25,10 +25,9 @@ struct MainTabView: View {
         NavigationView {
             ZStack {
                 Color.Neumorphic.main
-                    .edgesIgnoringSafeArea(.all)
                 
                      VStack {
-                        //Spacer()
+                        Spacer()
                          switch viewRouter.currentPage {
                          case .home:
                             
@@ -72,8 +71,9 @@ struct MainTabView: View {
                         
                      }
                 
-            }
-            //.edgesIgnoringSafeArea(.all)
+            }.edgesIgnoringSafeArea(.all)
+            .navigationBarTitle(Text(""))
+            .navigationBarHidden(true)
         }
         .accentColor(Color.Neumorphic.darkShadow)
         
