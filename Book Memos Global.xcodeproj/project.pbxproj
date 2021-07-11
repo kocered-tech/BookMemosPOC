@@ -31,6 +31,8 @@
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
 		18B299482696EB37002557AE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B299472696EB37002557AE /* GlobalConstants.swift */; };
 		18B2994C26975C34002557AE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2994B26975C34002557AE /* AddBookView.swift */; };
+		18B2995026975E35002557AE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 18B2994F26975E35002557AE /* Realm */; };
+		18B2995226975E35002557AE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18B2995126975E35002557AE /* RealmSwift */; };
 		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
 		18C910172696694E00716146 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 18C910162696694E00716146 /* KeyboardObserving */; };
 /* End PBXBuildFile section */
@@ -67,10 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B2995226975E35002557AE /* RealmSwift in Frameworks */,
 				180D6BA52673EE1100F8FA89 /* SwiftUIX in Frameworks */,
 				18C910172696694E00716146 /* KeyboardObserving in Frameworks */,
 				1866FE3C26722A37007DC589 /* Neumorphic in Frameworks */,
 				180D6B9326729B4E00F8FA89 /* WaterfallGrid in Frameworks */,
+				18B2995026975E35002557AE /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +204,8 @@
 				180D6B9226729B4E00F8FA89 /* WaterfallGrid */,
 				180D6BA42673EE1100F8FA89 /* SwiftUIX */,
 				18C910162696694E00716146 /* KeyboardObserving */,
+				18B2994F26975E35002557AE /* Realm */,
+				18B2995126975E35002557AE /* RealmSwift */,
 			);
 			productName = "Book Memos Global";
 			productReference = 1866FE2226722663007DC589 /* Book Memos Global.app */;
@@ -233,6 +239,7 @@
 				180D6B9126729B4E00F8FA89 /* XCRemoteSwiftPackageReference "WaterfallGrid" */,
 				180D6BA32673EE1100F8FA89 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
+				18B2994E26975E35002557AE /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 1866FE2326722663007DC589 /* Products */;
 			projectDirPath = "";
@@ -503,6 +510,14 @@
 				minimumVersion = 2.0.5;
 			};
 		};
+		18B2994E26975E35002557AE /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
 		18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nickffox/KeyboardObserving.git";
@@ -528,6 +543,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1866FE3A26722A37007DC589 /* XCRemoteSwiftPackageReference "neumorphic" */;
 			productName = Neumorphic;
+		};
+		18B2994F26975E35002557AE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B2994E26975E35002557AE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		18B2995126975E35002557AE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B2994E26975E35002557AE /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 		18C910162696694E00716146 /* KeyboardObserving */ = {
 			isa = XCSwiftPackageProductDependency;
