@@ -16,6 +16,8 @@ struct HomeView: View {
     @State var searchText = ""
     @Binding var isNoteDetailVisible: Bool
     
+    @FetchRequest(entity: Book.entity(), sortDescriptors: []) var books: FetchedResults<Book>
+    
     var body: some View {
         
         ZStack {
@@ -47,7 +49,10 @@ struct HomeView: View {
                 
             }.padding(.top)
             
-            
+            .onAppear{
+                print(books.count)
+                
+            }
             
             
         }

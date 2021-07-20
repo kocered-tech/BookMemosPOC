@@ -19,6 +19,8 @@
 		180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */; };
 		180D6BA12673EB8200F8FA89 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D6BA02673EB8200F8FA89 /* BookDetailView.swift */; };
 		180D6BA52673EE1100F8FA89 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 180D6BA42673EE1100F8FA89 /* SwiftUIX */; };
+		18196F2226A59A0C00EE12BB /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18196F2126A59A0C00EE12BB /* ImagePicker.swift */; };
+		182CF3DC269B14780011BA54 /* BookMemos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 182CF3DA269B14780011BA54 /* BookMemos.xcdatamodeld */; };
 		1866FE2626722663007DC589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2526722663007DC589 /* AppDelegate.swift */; };
 		1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2726722663007DC589 /* SceneDelegate.swift */; };
 		1866FE2A26722663007DC589 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE2926722663007DC589 /* MainTabView.swift */; };
@@ -29,6 +31,9 @@
 		1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE3E26723113007DC589 /* ViewRouter.swift */; };
 		1866FE43267250F8007DC589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866FE42267250F8007DC589 /* HomeView.swift */; };
 		186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EDE022673FB42001A0184 /* NoteDetailView.swift */; };
+		1895FFAE26A70F5B00AC7588 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895FFAD26A70F5B00AC7588 /* AddNoteView.swift */; };
+		1895FFB126A7106000AC7588 /* AddSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895FFB026A7106000AC7588 /* AddSelectorView.swift */; };
+		18AF5F4526A573F50096C9A8 /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF5F4426A573F50096C9A8 /* PersistanceController.swift */; };
 		18B299482696EB37002557AE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B299472696EB37002557AE /* GlobalConstants.swift */; };
 		18B2994C26975C34002557AE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2994B26975C34002557AE /* AddBookView.swift */; };
 		18B2995026975E35002557AE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 18B2994F26975E35002557AE /* Realm */; };
@@ -48,6 +53,8 @@
 		180D6B992672AB3300F8FA89 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		180D6B9D2672AB3F00F8FA89 /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		180D6BA02673EB8200F8FA89 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		18196F2126A59A0C00EE12BB /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		182CF3DB269B14780011BA54 /* BookMemos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookMemos.xcdatamodel; sourceTree = "<group>"; };
 		1866FE2226722663007DC589 /* Book Memos Global.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Memos Global.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866FE2526722663007DC589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1866FE2726722663007DC589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +66,9 @@
 		1866FE3E26723113007DC589 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		1866FE42267250F8007DC589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		186EDE022673FB42001A0184 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		1895FFAD26A70F5B00AC7588 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		1895FFB026A7106000AC7588 /* AddSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSelectorView.swift; sourceTree = "<group>"; };
+		18AF5F4426A573F50096C9A8 /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
 		18B299472696EB37002557AE /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		18B2994B26975C34002557AE /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		18C910122696497200716146 /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
@@ -91,6 +101,8 @@
 				180D6BA02673EB8200F8FA89 /* BookDetailView.swift */,
 				186EDE022673FB42001A0184 /* NoteDetailView.swift */,
 				18B2994B26975C34002557AE /* AddBookView.swift */,
+				1895FFAD26A70F5B00AC7588 /* AddNoteView.swift */,
+				1895FFB026A7106000AC7588 /* AddSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +134,14 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		18196F2026A599FD00EE12BB /* UIKITRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				18196F2126A59A0C00EE12BB /* ImagePicker.swift */,
+			);
+			path = UIKITRepresentable;
+			sourceTree = "<group>";
+		};
 		1866FE1926722662007DC589 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +161,7 @@
 		1866FE2426722663007DC589 /* Book Memos Global */ = {
 			isa = PBXGroup;
 			children = (
+				18196F2026A599FD00EE12BB /* UIKITRepresentable */,
 				18B299462696EB2B002557AE /* Helpers */,
 				18C910112696496300716146 /* Extensions */,
 				180D6B7D26725C4700F8FA89 /* SubViews */,
@@ -155,6 +176,7 @@
 				1866FE2D26722665007DC589 /* Preview Content */,
 				1866FE3E26723113007DC589 /* ViewRouter.swift */,
 				180D6B882672619600F8FA89 /* Extensions.swift */,
+				182CF3DA269B14780011BA54 /* BookMemos.xcdatamodeld */,
 			);
 			path = "Book Memos Global";
 			sourceTree = "<group>";
@@ -171,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				18B299472696EB37002557AE /* GlobalConstants.swift */,
+				18AF5F4426A573F50096C9A8 /* PersistanceController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -275,6 +298,7 @@
 				186EDE032673FB42001A0184 /* NoteDetailView.swift in Sources */,
 				180D6B9E2672AB3F00F8FA89 /* NoteModel.swift in Sources */,
 				1866FE2826722663007DC589 /* SceneDelegate.swift in Sources */,
+				18196F2226A59A0C00EE12BB /* ImagePicker.swift in Sources */,
 				180D6B7F26725D2A00F8FA89 /* BookScrollView.swift in Sources */,
 				180D6B962672A17A00F8FA89 /* KocerWaterfall.swift in Sources */,
 				180D6BA12673EB8200F8FA89 /* BookDetailView.swift in Sources */,
@@ -282,11 +306,15 @@
 				18B299482696EB37002557AE /* GlobalConstants.swift in Sources */,
 				1866FE2A26722663007DC589 /* MainTabView.swift in Sources */,
 				180D6B862672612000F8FA89 /* PercentageRing.swift in Sources */,
+				182CF3DC269B14780011BA54 /* BookMemos.xcdatamodeld in Sources */,
 				1866FE43267250F8007DC589 /* HomeView.swift in Sources */,
 				180D6B8F26726B9500F8FA89 /* NoteCardView.swift in Sources */,
 				1866FE3F26723113007DC589 /* ViewRouter.swift in Sources */,
 				18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */,
+				1895FFAE26A70F5B00AC7588 /* AddNoteView.swift in Sources */,
+				1895FFB126A7106000AC7588 /* AddSelectorView.swift in Sources */,
 				180D6B8C26726AE800F8FA89 /* HomeNotesView.swift in Sources */,
+				18AF5F4526A573F50096C9A8 /* PersistanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +588,19 @@
 			productName = KeyboardObserving;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		182CF3DA269B14780011BA54 /* BookMemos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				182CF3DB269B14780011BA54 /* BookMemos.xcdatamodel */,
+			);
+			currentVersion = 182CF3DB269B14780011BA54 /* BookMemos.xcdatamodel */;
+			path = BookMemos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1866FE1A26722662007DC589 /* Project object */;
 }

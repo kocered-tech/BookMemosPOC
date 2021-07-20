@@ -70,3 +70,23 @@ extension UIImage {
         return UIColor(red: CGFloat(bitmap[0]) / 255, green: CGFloat(bitmap[1]) / 255, blue: CGFloat(bitmap[2]) / 255, alpha: CGFloat(bitmap[3]) / 255)
     }
 }
+
+extension AddBookView {
+final class ViewModel: ObservableObject {
+@Published var selectedImage: UIImage?
+@Published var isPresentingImagePicker = false
+private(set) var sourceType: ImagePicker.SourceType = .camera
+func choosePhoto() {
+            sourceType = .photoLibrary
+            isPresentingImagePicker = true
+        }
+func takePhoto() {
+            sourceType = .camera
+            isPresentingImagePicker = true
+        }
+func didSelectImage(_ image: UIImage?) {
+            selectedImage = image
+            isPresentingImagePicker = false
+        }
+    }
+}

@@ -44,7 +44,7 @@ struct MainTabView: View {
                                 
                             
                          case .add:
-                            Text("Add")
+                            AddSelectorView()
                             
                          case .records:
                              Text("Records")

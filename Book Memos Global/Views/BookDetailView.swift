@@ -17,7 +17,7 @@ struct BookDetailView: View {
             book.imageData.getImage()
                 .resizable()
                 .blur(radius: 50)
-                .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight)
                 
             ScrollView{
                 
