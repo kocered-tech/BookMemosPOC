@@ -40,6 +40,7 @@
 		18B2995226975E35002557AE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 18B2995126975E35002557AE /* RealmSwift */; };
 		18C910132696497200716146 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C910122696497200716146 /* SwiftUIExtensions.swift */; };
 		18C910172696694E00716146 /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 18C910162696694E00716146 /* KeyboardObserving */; };
+		18D8E78326ADADCD0096B66A /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 18D8E78226ADADCD0096B66A /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 				18C910172696694E00716146 /* KeyboardObserving in Frameworks */,
 				1866FE3C26722A37007DC589 /* Neumorphic in Frameworks */,
 				180D6B9326729B4E00F8FA89 /* WaterfallGrid in Frameworks */,
+				18D8E78326ADADCD0096B66A /* CodeScanner in Frameworks */,
 				18B2995026975E35002557AE /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +177,6 @@
 				1866FE3326722665007DC589 /* Info.plist */,
 				1866FE2D26722665007DC589 /* Preview Content */,
 				1866FE3E26723113007DC589 /* ViewRouter.swift */,
-				180D6B882672619600F8FA89 /* Extensions.swift */,
 				182CF3DA269B14780011BA54 /* BookMemos.xcdatamodeld */,
 			);
 			path = "Book Memos Global";
@@ -202,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				18C910122696497200716146 /* SwiftUIExtensions.swift */,
+				180D6B882672619600F8FA89 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +231,7 @@
 				18C910162696694E00716146 /* KeyboardObserving */,
 				18B2994F26975E35002557AE /* Realm */,
 				18B2995126975E35002557AE /* RealmSwift */,
+				18D8E78226ADADCD0096B66A /* CodeScanner */,
 			);
 			productName = "Book Memos Global";
 			productReference = 1866FE2226722663007DC589 /* Book Memos Global.app */;
@@ -263,6 +266,7 @@
 				180D6BA32673EE1100F8FA89 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
 				18B2994E26975E35002557AE /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				18D8E78126ADADCD0096B66A /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 1866FE2326722663007DC589 /* Products */;
 			projectDirPath = "";
@@ -554,6 +558,14 @@
 				minimumVersion = 0.3.0;
 			};
 		};
+		18D8E78126ADADCD0096B66A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -586,6 +598,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 18C910152696694E00716146 /* XCRemoteSwiftPackageReference "KeyboardObserving" */;
 			productName = KeyboardObserving;
+		};
+		18D8E78226ADADCD0096B66A /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18D8E78126ADADCD0096B66A /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 
