@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CodeScanner
 
 struct AddBookView: View {
     @Environment(\.managedObjectContext) var moc
@@ -18,6 +19,10 @@ struct AddBookView: View {
     private var sourceType = UIImagePickerController.SourceType.camera
     @State private var selectedPhoto: Image?
     
+    // Barcode Scanner
+    
+    @State var isPresentingScanner = false
+    @State var scannedCode: String?
     
     init(){
             UITableView.appearance().backgroundColor = .clear
@@ -29,6 +34,13 @@ struct AddBookView: View {
                 Text("Add Book")
                     .font(.title2)
                     .bold()
+                
+                Button("Scan Code") {
+                    
+                    self.isPresentingScanner = true
+                    }
+                .sheet(isPresented: $isPresentingScanner) {
+                }
                 
                 TextField("Title", text: $title)
                     
@@ -80,6 +92,18 @@ struct AddBookView: View {
         })
         
     }
+    
+    var scannerSheet : some View {
+            CodeScannerView(
+                codeTypes: [.qr],
+                completion: { result in
+                    if case let .success(code) = result {
+                        self.scannedCode = code
+                        self.isPresentingScanner = false
+                    }
+                }
+            )
+        }
     
     
     private func addBook() {
